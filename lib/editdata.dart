@@ -19,8 +19,7 @@ class _EditDataState extends State<EditData> {
   TextEditingController controllerStock;
 
   void editData() {
-    var url = "http://10.0.2.2/my_store/editdata.php";
-    http.post(url, body: {
+    http.post(Uri.parse("http://10.0.2.2/my_store/deletedata.php"), body: {
       "id": widget.list[widget.index]['id'],
       "itemcode": controllerCode.text,
       "itemname": controllerName.text,

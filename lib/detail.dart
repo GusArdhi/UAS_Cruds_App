@@ -13,8 +13,8 @@ class Detail extends StatefulWidget {
 
 class _DetailState extends State<Detail> {
   void deleteData() {
-    var url = "http://10.0.2.2/my_store/deletedata.php";
-    http.post(url, body: {'id': widget.list[widget.index]['id']});
+    http.post(Uri.parse("http://10.0.2.2/my_store/deletedata.php"),
+        body: {'id': widget.list[widget.index]['id']});
   }
 
   void confirm() {
@@ -43,7 +43,7 @@ class _DetailState extends State<Detail> {
       ],
     );
 
-    showDialog(context: context, child: alertDialog);
+    showDialog(builder: (context) => alertDialog, context: context);
   }
 
   @override
