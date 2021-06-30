@@ -1,5 +1,5 @@
 <?php
-
+	include 'Conn.php';
 	$id = $_POST['id'];
 	$itemcode = $_POST['itemcode'];
 	$itemname = $_POST['itemname'];
