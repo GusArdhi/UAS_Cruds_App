@@ -22,6 +22,7 @@ class _DetailState extends State<Detail> {
       content: new Text(
           "Are You sure want to delete '${widget.list[widget.index]['item_name']}'"),
       actions: <Widget>[
+        // ignore: deprecated_member_use
         new RaisedButton(
           child: new Text(
             "OK DELETE!",
@@ -35,6 +36,7 @@ class _DetailState extends State<Detail> {
             ));
           },
         ),
+        // ignore: deprecated_member_use
         new RaisedButton(
           child: new Text("CANCEL", style: new TextStyle(color: Colors.black)),
           color: Colors.green,
@@ -83,6 +85,7 @@ class _DetailState extends State<Detail> {
                 new Row(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
+                    // ignore: deprecated_member_use
                     new RaisedButton(
                       child: new Text("EDIT"),
                       color: Colors.green,
@@ -94,6 +97,7 @@ class _DetailState extends State<Detail> {
                         ),
                       )),
                     ),
+                    // ignore: deprecated_member_use
                     new RaisedButton(
                       child: new Text("DELETE"),
                       color: Colors.red,

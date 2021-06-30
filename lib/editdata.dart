@@ -76,6 +76,7 @@ class _EditDataState extends State<EditData> {
                 new Padding(
                   padding: const EdgeInsets.all(10.0),
                 ),
+                // ignore: deprecated_member_use
                 new RaisedButton(
                   child: new Text("EDIT DATA"),
                   color: Colors.blueAccent,

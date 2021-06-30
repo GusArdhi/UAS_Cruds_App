@@ -20,7 +20,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   Future<List> getData() async {
-    final response = await http.get(Uri.parse("http://10.0.2.2/my_store/deletedata.php");
+    final response =
+        await http.get(Uri.parse("http://10.0.2.2/my_store/deletedata.php"));
     return json.decode(response.body);
   }
 
