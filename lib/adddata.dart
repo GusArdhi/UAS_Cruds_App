@@ -13,7 +13,7 @@ class _AddDataState extends State<AddData> {
   TextEditingController controllerStock = new TextEditingController();
 
   void addData() {
-    http.post(Uri.parse("http://10.0.2.2/my_store/deletedata.php"), body: {
+    http.post(Uri.parse("http://10.0.2.2/my_store/adddata.php"), body: {
       "itemcode": controllerCode.text,
       "itemname": controllerName.text,
       "price": controllerPrice.text,
